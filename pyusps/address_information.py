@@ -102,7 +102,7 @@ def _get_response(xml):
         api_url=api_url,
         params=urllib.parse.urlencode(params),
         )
-
+    print(url)
     res = urllib.request.urlopen(url)
     res = etree.parse(res)
 
